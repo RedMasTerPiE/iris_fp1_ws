@@ -14,7 +14,7 @@ git submodule foreach --recursive 'git reset --hard && git clean -ffdx'
 # Move top-level submodules to the tip of their upstream branch,
 # then check out nested submodules at the commits upstream records
 git submodule update --init --remote --force
-git submodule update --init --recursive --force
+git submodule foreach 'git submodule update --init --recursive --force'
 
 mapfile -t paths < <(git config --file .gitmodules --get-regexp '\.path$' | awk '{print $2}')
 git add .gitmodules "${paths[@]}"
