@@ -1,0 +1,27 @@
+[0.019s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[0.148s] [ 50%] Built target kinematics
+[0.174s] [ 75%] Building CXX object CMakeFiles/ackermannSteering.dir/scripts/ackermannSteering.cpp.o
+[15.838s] [100%] Linking CXX executable ackermannSteering
+[16.523s] [100%] Built target ackermannSteering
+[16.557s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[16.561s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master
+[16.583s] -- Install configuration: ""
+[16.584s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/master/ackermannSteering
+[16.596s] -- Set non-toolchain portion of runtime path of "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/master/ackermannSteering" to ""
+[16.596s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/master/kinematics
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/package_run_dependencies/master
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/parent_prefix_path/master
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/ament_prefix_path.sh
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/ament_prefix_path.dsv
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/path.sh
+[16.597s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/path.dsv
+[16.598s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.bash
+[16.598s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.sh
+[16.598s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.zsh
+[16.598s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.dsv
+[16.598s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.dsv
+[16.598s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/packages/master
+[16.599s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/cmake/masterConfig.cmake
+[16.599s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/cmake/masterConfig-version.cmake
+[16.599s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.xml
+[16.600s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master

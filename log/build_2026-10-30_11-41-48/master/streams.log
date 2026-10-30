@@ -1,0 +1,47 @@
+[0.029s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[0.145s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.029s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.330s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.331s] -- Configured cppcheck include dirs: 
+[1.331s] -- Configured cppcheck exclude dirs and/or files: 
+[1.333s] -- Added test 'lint_cmake' to check CMake code style
+[1.335s] -- Added test 'uncrustify' to check C / C++ code style
+[1.336s] -- Configured uncrustify additional arguments: 
+[1.337s] -- Added test 'xmllint' to check XML markup files
+[1.339s] -- Configuring done (1.3s)
+[1.358s] -- Generating done (0.0s)
+[1.365s] -- Build files have been written to: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master
+[1.454s] [ 50%] Building CXX object CMakeFiles/ackermannSteering.dir/scripts/ackermannSteering.cpp.o
+[2.115s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp: In function ‘double turningRadius(double, double, double)’:
+[2.116s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp:24:29: warning: unused parameter ‘wheelBase’ [-Wunused-parameter]
+[2.116s]    24 | double turningRadius(double wheelBase, double targetX, double targetY)
+[2.116s]       |                      ~~~~~~~^~~~~~~~~
+[2.118s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp: In function ‘int main(int, char**)’:
+[2.118s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp:45:12: warning: unused variable ‘steerAngle’ [-Wunused-variable]
+[2.119s]    45 |     double steerAngle = steeringAngle(wheelBase, targetX, targetY, pi);
+[2.119s]       |            ^~~~~~~~~~
+[2.119s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp:46:12: warning: unused variable ‘turningR’ [-Wunused-variable]
+[2.119s]    46 |     double turningR = turningRadius(wheelBase, targetX, targetY);
+[2.120s]       |            ^~~~~~~~
+[2.495s] [100%] Linking CXX executable ackermannSteering
+[2.807s] [100%] Built target ackermannSteering
+[2.840s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[2.844s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master
+[2.867s] -- Install configuration: ""
+[2.867s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/master/ackermannSteering
+[2.869s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/package_run_dependencies/master
+[2.869s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/parent_prefix_path/master
+[2.870s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/ament_prefix_path.sh
+[2.870s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/ament_prefix_path.dsv
+[2.871s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/path.sh
+[2.871s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/environment/path.dsv
+[2.872s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.bash
+[2.872s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.sh
+[2.872s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.zsh
+[2.872s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/local_setup.dsv
+[2.873s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.dsv
+[2.873s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/ament_index/resource_index/packages/master
+[2.873s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/cmake/masterConfig.cmake
+[2.873s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/cmake/masterConfig-version.cmake
+[2.874s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.xml
+[2.876s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master

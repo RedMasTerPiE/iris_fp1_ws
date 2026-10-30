@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (-) JobUnselected: {'identifier': 'autonomous_vehicle_nosecurity'}
+[0.000268] (-) JobUnselected: {'identifier': 'autonomous_vehicle_project'}
+[0.000440] (-) JobUnselected: {'identifier': 'autonomous_vehicle_simple'}
+[0.000501] (-) JobUnselected: {'identifier': 'autonomous_vehicle_teb'}
+[0.000571] (-) JobUnselected: {'identifier': 'avisengine_environment'}
+[0.000755] (-) JobUnselected: {'identifier': 'avisengine_resources'}
+[0.000794] (-) JobUnselected: {'identifier': 'can_sim_tc'}
+[0.000834] (-) JobUnselected: {'identifier': 'catvehicle'}
+[0.000900] (-) JobUnselected: {'identifier': 'catvehicle_gazebo'}
+[0.001008] (-) JobUnselected: {'identifier': 'catvehicle_gps_action'}
+[0.001045] (-) JobUnselected: {'identifier': 'catvehicle_tests'}
+[0.001179] (-) JobUnselected: {'identifier': 'cmdvel2gazebo'}
+[0.001217] (-) JobUnselected: {'identifier': 'control_toolbox'}
+[0.001253] (-) JobUnselected: {'identifier': 'dataspeed_can'}
+[0.001287] (-) JobUnselected: {'identifier': 'dataspeed_can_msg_filters'}
+[0.001407] (-) JobUnselected: {'identifier': 'dataspeed_can_tools'}
+[0.001886] (-) JobUnselected: {'identifier': 'dataspeed_can_usb'}
+[0.002001] (-) JobUnselected: {'identifier': 'dbw_mkz'}
+[0.002040] (-) JobUnselected: {'identifier': 'dbw_mkz_can'}
+[0.002087] (-) JobUnselected: {'identifier': 'dbw_mkz_description'}
+[0.002125] (-) JobUnselected: {'identifier': 'dbw_mkz_gazebo'}
+[0.002238] (-) JobUnselected: {'identifier': 'dbw_mkz_gui'}
+[0.002277] (-) JobUnselected: {'identifier': 'dbw_mkz_joystick_demo'}
+[0.002314] (-) JobUnselected: {'identifier': 'dbw_mkz_msgs'}
+[0.002370] (-) JobUnselected: {'identifier': 'drcsim_model_resources'}
+[0.002421] (-) JobUnselected: {'identifier': 'example_pkg'}
+[0.002531] (-) JobUnselected: {'identifier': 'iris_fira_simulation'}
+[0.002646] (-) JobUnselected: {'identifier': 'lusb'}
+[0.002681] (-) JobUnselected: {'identifier': 'master'}
+[0.002699] (-) JobUnselected: {'identifier': 'obstaclestopper'}
+[0.002718] (-) JobUnselected: {'identifier': 'rviz_satellite'}
+[0.002736] (-) JobUnselected: {'identifier': 'sicktoolbox'}
+[0.002753] (-) JobUnselected: {'identifier': 'sicktoolbox_wrapper'}
+[0.002772] (-) JobUnselected: {'identifier': 'stepvel'}
+[0.002790] (-) JobUnselected: {'identifier': 'teb_navigation_demo'}
+[0.002809] (-) JobUnselected: {'identifier': 'vision'}
+[0.002833] (communication) JobQueued: {'identifier': 'communication', 'dependencies': OrderedDict()}
+[0.002861] (communication) JobStarted: {'identifier': 'communication'}
+[0.021967] (communication) JobProgress: {'identifier': 'communication', 'progress': 'cmake'}
+[0.024177] (communication) JobProgress: {'identifier': 'communication', 'progress': 'build'}
+[0.026500] (communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', '--', '-j28', '-l28'], 'cwd': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'opencode', 'OPENCODE_SESSION_ID': 'ses_e823a7432ffec03GtAF2r24bWM', 'USER': 'farrel', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'AGENT': '1', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/farrel', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.141.0', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/farrel/.nvm/versions/node/v26.11.1/bin', 'NVM_INC': '/home/farrel/.nvm/versions/node/v26.11.1/include/node', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2811', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3204', 'BUNDLED_DEBUGPY_PATH': '/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '32699', 'NVM_DIR': '/home/farrel/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'farrel', 'JOURNAL_STREAM': '10:34836', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'CLAUDE_CODE_SSE_PORT': '48464', 'XDG_SESSION_CLASS': 'user', 'OPENCODE_TERMINAL': '1', 'USERNAME': 'farrel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'OPENCODE': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/farrel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/farrel/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/farrel/.nvm/versions/node/v26.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/farrel-Legion-5-15IRX10:@/tmp/.ICE-unix/3172,unix/farrel-Legion-5-15IRX10:/tmp/.ICE-unix/3172', 'INVOCATION_ID': 'e3d62de080764bcf8cbbd67339f4004a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-f8d4fa456bc7ba88.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/farrel/.config/Code/User/workspaceStorage/cc080cb89e3652a2dc1db7d7a5ff5b72/ms-python.python/pythonrc.py', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0a7f9e8415.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '0ff11a50f888a372fc3b7afd596dc450', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/farrel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/farrel/.nvm/versions/node/v26.11.1/share/man:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098244] (-) TimerEvent: {}
+[0.198584] (-) TimerEvent: {}
+[0.203636] (communication) StdoutLine: {'line': b'[ 50%] Built target udpReceiver\n'}
+[0.237054] (communication) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/udpSender.dir/scripts/udpSender.cpp.o\n'}
+[0.298732] (-) TimerEvent: {}
+[0.399115] (-) TimerEvent: {}
+[0.499537] (-) TimerEvent: {}
+[0.599868] (-) TimerEvent: {}
+[0.700155] (-) TimerEvent: {}
+[0.800460] (-) TimerEvent: {}
+[0.900807] (-) TimerEvent: {}
+[1.001169] (-) TimerEvent: {}
+[1.101554] (-) TimerEvent: {}
+[1.201878] (-) TimerEvent: {}
+[1.302205] (-) TimerEvent: {}
+[1.402593] (-) TimerEvent: {}
+[1.502914] (-) TimerEvent: {}
+[1.603218] (-) TimerEvent: {}
+[1.703553] (-) TimerEvent: {}
+[1.803879] (-) TimerEvent: {}
+[1.904283] (-) TimerEvent: {}
+[2.004604] (-) TimerEvent: {}
+[2.104934] (-) TimerEvent: {}
+[2.205269] (-) TimerEvent: {}
+[2.305636] (-) TimerEvent: {}
+[2.406056] (-) TimerEvent: {}
+[2.506476] (-) TimerEvent: {}
+[2.606915] (-) TimerEvent: {}
+[2.707314] (-) TimerEvent: {}
+[2.807736] (-) TimerEvent: {}
+[2.908194] (-) TimerEvent: {}
+[3.008670] (-) TimerEvent: {}
+[3.109015] (-) TimerEvent: {}
+[3.209400] (-) TimerEvent: {}
+[3.309803] (-) TimerEvent: {}
+[3.410301] (-) TimerEvent: {}
+[3.510725] (-) TimerEvent: {}
+[3.611092] (-) TimerEvent: {}
+[3.711502] (-) TimerEvent: {}
+[3.811904] (-) TimerEvent: {}
+[3.912285] (-) TimerEvent: {}
+[4.012660] (-) TimerEvent: {}
+[4.113070] (-) TimerEvent: {}
+[4.213405] (-) TimerEvent: {}
+[4.313776] (-) TimerEvent: {}
+[4.414152] (-) TimerEvent: {}
+[4.514552] (-) TimerEvent: {}
+[4.614971] (-) TimerEvent: {}
+[4.715442] (-) TimerEvent: {}
+[4.815795] (-) TimerEvent: {}
+[4.916092] (-) TimerEvent: {}
+[5.016506] (-) TimerEvent: {}
+[5.116976] (-) TimerEvent: {}
+[5.217453] (-) TimerEvent: {}
+[5.317856] (-) TimerEvent: {}
+[5.418147] (-) TimerEvent: {}
+[5.518442] (-) TimerEvent: {}
+[5.618874] (-) TimerEvent: {}
+[5.719227] (-) TimerEvent: {}
+[5.819655] (-) TimerEvent: {}
+[5.920019] (-) TimerEvent: {}
+[6.020382] (-) TimerEvent: {}
+[6.120937] (-) TimerEvent: {}
+[6.221397] (-) TimerEvent: {}
+[6.321839] (-) TimerEvent: {}
+[6.422244] (-) TimerEvent: {}
+[6.522628] (-) TimerEvent: {}
+[6.622918] (-) TimerEvent: {}
+[6.723241] (-) TimerEvent: {}
+[6.823617] (-) TimerEvent: {}
+[6.923998] (-) TimerEvent: {}
+[7.024381] (-) TimerEvent: {}
+[7.124714] (-) TimerEvent: {}
+[7.225075] (-) TimerEvent: {}
+[7.325440] (-) TimerEvent: {}
+[7.425879] (-) TimerEvent: {}
+[7.526328] (-) TimerEvent: {}
+[7.626724] (-) TimerEvent: {}
+[7.727071] (-) TimerEvent: {}
+[7.827471] (-) TimerEvent: {}
+[7.927943] (-) TimerEvent: {}
+[8.028320] (-) TimerEvent: {}
+[8.128678] (-) TimerEvent: {}
+[8.229108] (-) TimerEvent: {}
+[8.329485] (-) TimerEvent: {}
+[8.429828] (-) TimerEvent: {}
+[8.530116] (-) TimerEvent: {}
+[8.630389] (-) TimerEvent: {}
+[8.730693] (-) TimerEvent: {}
+[8.831086] (-) TimerEvent: {}
+[8.931393] (-) TimerEvent: {}
+[9.031714] (-) TimerEvent: {}
+[9.132001] (-) TimerEvent: {}
+[9.232388] (-) TimerEvent: {}
+[9.332784] (-) TimerEvent: {}
+[9.433217] (-) TimerEvent: {}
+[9.533576] (-) TimerEvent: {}
+[9.633978] (-) TimerEvent: {}
+[9.734342] (-) TimerEvent: {}
+[9.834736] (-) TimerEvent: {}
+[9.935009] (-) TimerEvent: {}
+[10.035238] (-) TimerEvent: {}
+[10.135597] (-) TimerEvent: {}
+[10.235941] (-) TimerEvent: {}
+[10.336266] (-) TimerEvent: {}
+[10.436624] (-) TimerEvent: {}
+[10.536900] (-) TimerEvent: {}
+[10.637278] (-) TimerEvent: {}
+[10.737586] (-) TimerEvent: {}
+[10.837821] (-) TimerEvent: {}
+[10.938054] (-) TimerEvent: {}
+[11.038437] (-) TimerEvent: {}
+[11.138830] (-) TimerEvent: {}
+[11.239169] (-) TimerEvent: {}
+[11.339487] (-) TimerEvent: {}
+[11.439762] (-) TimerEvent: {}
+[11.540086] (-) TimerEvent: {}
+[11.640407] (-) TimerEvent: {}
+[11.740659] (-) TimerEvent: {}
+[11.841024] (-) TimerEvent: {}
+[11.941415] (-) TimerEvent: {}
+[12.041795] (-) TimerEvent: {}
+[12.142137] (-) TimerEvent: {}
+[12.242492] (-) TimerEvent: {}
+[12.342836] (-) TimerEvent: {}
+[12.443116] (-) TimerEvent: {}
+[12.543563] (-) TimerEvent: {}
+[12.643914] (-) TimerEvent: {}
+[12.744256] (-) TimerEvent: {}
+[12.844592] (-) TimerEvent: {}
+[12.944833] (-) TimerEvent: {}
+[13.045183] (-) TimerEvent: {}
+[13.145476] (-) TimerEvent: {}
+[13.245735] (-) TimerEvent: {}
+[13.345988] (-) TimerEvent: {}
+[13.446338] (-) TimerEvent: {}
+[13.546606] (-) TimerEvent: {}
+[13.646850] (-) TimerEvent: {}
+[13.747164] (-) TimerEvent: {}
+[13.847539] (-) TimerEvent: {}
+[13.947804] (-) TimerEvent: {}
+[14.048030] (-) TimerEvent: {}
+[14.148308] (-) TimerEvent: {}
+[14.248615] (-) TimerEvent: {}
+[14.348852] (-) TimerEvent: {}
+[14.449167] (-) TimerEvent: {}
+[14.549561] (-) TimerEvent: {}
+[14.649877] (-) TimerEvent: {}
+[14.750129] (-) TimerEvent: {}
+[14.850325] (-) TimerEvent: {}
+[14.950508] (-) TimerEvent: {}
+[15.050701] (-) TimerEvent: {}
+[15.150905] (-) TimerEvent: {}
+[15.251194] (-) TimerEvent: {}
+[15.351509] (-) TimerEvent: {}
+[15.451724] (-) TimerEvent: {}
+[15.551933] (-) TimerEvent: {}
+[15.652161] (-) TimerEvent: {}
+[15.752385] (-) TimerEvent: {}
+[15.852446] (communication) StdoutLine: {'line': b'[100%] Linking CXX executable udpSender\n'}
+[15.852713] (-) TimerEvent: {}
+[15.952930] (-) TimerEvent: {}
+[16.053239] (-) TimerEvent: {}
+[16.153546] (-) TimerEvent: {}
+[16.237561] (communication) StdoutLine: {'line': b'[100%] Built target udpSender\n'}
+[16.253660] (-) TimerEvent: {}
+[16.257272] (communication) CommandEnded: {'returncode': 0}
+[16.258056] (communication) JobProgress: {'identifier': 'communication', 'progress': 'install'}
+[16.270702] (communication) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication'], 'cwd': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'opencode', 'OPENCODE_SESSION_ID': 'ses_e823a7432ffec03GtAF2r24bWM', 'USER': 'farrel', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'AGENT': '1', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/farrel', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.141.0', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/farrel/.nvm/versions/node/v26.11.1/bin', 'NVM_INC': '/home/farrel/.nvm/versions/node/v26.11.1/include/node', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2811', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3204', 'BUNDLED_DEBUGPY_PATH': '/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '32699', 'NVM_DIR': '/home/farrel/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'farrel', 'JOURNAL_STREAM': '10:34836', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'CLAUDE_CODE_SSE_PORT': '48464', 'XDG_SESSION_CLASS': 'user', 'OPENCODE_TERMINAL': '1', 'USERNAME': 'farrel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'OPENCODE': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/farrel/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/farrel/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/farrel/.nvm/versions/node/v26.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/farrel-Legion-5-15IRX10:@/tmp/.ICE-unix/3172,unix/farrel-Legion-5-15IRX10:/tmp/.ICE-unix/3172', 'INVOCATION_ID': 'e3d62de080764bcf8cbbd67339f4004a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/farrel/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-f8d4fa456bc7ba88.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/farrel/.config/Code/User/workspaceStorage/cc080cb89e3652a2dc1db7d7a5ff5b72/ms-python.python/pythonrc.py', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0a7f9e8415.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '0ff11a50f888a372fc3b7afd596dc450', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/farrel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/farrel/.nvm/versions/node/v26.11.1/share/man:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[16.288129] (communication) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.288723] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpReceiver\n'}
+[16.289245] (communication) StdoutLine: {'line': b'-- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpSender\n'}
+[16.295438] (communication) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpSender" to ""\n'}
+[16.295889] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/package_run_dependencies/communication\n'}
+[16.296302] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/parent_prefix_path/communication\n'}
+[16.296422] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.sh\n'}
+[16.296515] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.dsv\n'}
+[16.296620] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.sh\n'}
+[16.296703] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.dsv\n'}
+[16.296784] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.bash\n'}
+[16.296868] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.sh\n'}
+[16.296948] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.zsh\n'}
+[16.297028] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.dsv\n'}
+[16.297111] (communication) StdoutLine: {'line': b'-- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.dsv\n'}
+[16.297194] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/packages/communication\n'}
+[16.297279] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig.cmake\n'}
+[16.297453] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig-version.cmake\n'}
+[16.297554] (communication) StdoutLine: {'line': b'-- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.xml\n'}
+[16.298147] (communication) CommandEnded: {'returncode': 0}
+[16.319166] (communication) JobEnded: {'identifier': 'communication', 'rc': 0}
+[16.320089] (-) EventReactorShutdown: {}

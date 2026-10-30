@@ -1,0 +1,7 @@
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpSender.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpSender.cpp:232:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeys[m[K’ was not declared in this scope
+  232 |                     [01;31m[Kkeys[m[K.clear();
+      |                     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/udpSender.dir/build.make:76: CMakeFiles/udpSender.dir/scripts/udpSender.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/udpSender.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

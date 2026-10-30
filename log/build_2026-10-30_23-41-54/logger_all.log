@@ -1,0 +1,767 @@
+[0.160s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'communication', 'vision', 'master']
+[0.160s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=28, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['communication', 'vision', 'master'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7bff96a070e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7bff96a06d80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7bff96a06d80>>, mixin_verb=('build',))
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.236s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/communication) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'src/communication' with type 'ros.ament_cmake' and name 'communication'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/master) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'src/master' with type 'ros.ament_cmake' and name 'master'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ros'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'python'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['python_setup_py']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'python_setup_py'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'ros'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['cmake', 'python']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/scripts) by extension 'python_setup_py'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'ros'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['cmake', 'python']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'cmake'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'python'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extensions ['python_setup_py']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src) by extension 'python_setup_py'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['cmake', 'python']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'cmake'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'python'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extensions ['python_setup_py']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator) by extension 'python_setup_py'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity) by extension 'ros'
+[0.294s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity' with type 'ros.catkin' and name 'autonomous_vehicle_nosecurity'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project) by extension 'ros'
+[0.295s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project' with type 'ros.catkin' and name 'autonomous_vehicle_project'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple' with type 'ros.catkin' and name 'autonomous_vehicle_simple'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb' with type 'ros.catkin' and name 'autonomous_vehicle_teb'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment' with type 'ros.catkin' and name 'avisengine_environment'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources' with type 'ros.catkin' and name 'avisengine_resources'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc' with type 'ros.catkin' and name 'can_sim_tc'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'ros'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['cmake', 'python']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'cmake'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics) by extension 'python_setup_py'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle' with type 'ros.catkin' and name 'catvehicle'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo' with type 'ros.catkin' and name 'catvehicle_gazebo'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action' with type 'ros.catkin' and name 'catvehicle_gps_action'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests' with type 'ros.catkin' and name 'catvehicle_tests'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo' with type 'ros.catkin' and name 'cmdvel2gazebo'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox' with type 'ros.catkin' and name 'control_toolbox'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources' with type 'ros.catkin' and name 'drcsim_model_resources'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper) by extension 'ros'
+[0.322s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper' with type 'ros.catkin' and name 'obstaclestopper'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite' with type 'ros.catkin' and name 'rviz_satellite'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel' with type 'ros.catkin' and name 'stepvel'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can' with type 'ros.catkin' and name 'dataspeed_can'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters' with type 'ros.catkin' and name 'dataspeed_can_msg_filters'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msgs) ignored
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools' with type 'ros.catkin' and name 'dataspeed_can_tools'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb' with type 'ros.catkin' and name 'dataspeed_can_usb'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'ros'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['cmake', 'python']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'cmake'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'python'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extensions ['python_setup_py']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros) by extension 'python_setup_py'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz' with type 'ros.catkin' and name 'dbw_mkz'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can' with type 'ros.catkin' and name 'dbw_mkz_can'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description' with type 'ros.catkin' and name 'dbw_mkz_description'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo' with type 'ros.catkin' and name 'dbw_mkz_gazebo'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui' with type 'ros.catkin' and name 'dbw_mkz_gui'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo' with type 'ros.catkin' and name 'dbw_mkz_joystick_demo'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs' with type 'ros.catkin' and name 'dbw_mkz_msgs'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_twist_controller) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/img) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg' with type 'ros.catkin' and name 'example_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'ros'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['cmake', 'python']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'cmake'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'python'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extensions ['python_setup_py']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/images) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb' with type 'ros.catkin' and name 'lusb'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox) by extension 'ros'
+[0.355s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox' with type 'ros.catkin' and name 'sicktoolbox'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper) by extension 'ros'
+[0.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper' with type 'ros.catkin' and name 'sicktoolbox_wrapper'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extension 'ignore_ament_install'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extensions ['colcon_pkg']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extension 'colcon_pkg'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extensions ['colcon_meta']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extension 'colcon_meta'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extensions ['ros']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo) by extension 'ros'
+[0.359s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo' with type 'ros.catkin' and name 'teb_navigation_demo'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation/src/iris_fira_simulation) by extension 'ros'
+[0.361s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation/src/iris_fira_simulation' with type 'ros.catkin' and name 'iris_fira_simulation'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ros'
+[0.364s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision' with type 'ros.ament_cmake' and name 'vision'
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autonomous_vehicle_teb' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_teb'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'avisengine_environment' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_environment'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'avisengine_resources' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/avisengine_resources'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'catvehicle_gazebo' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gazebo'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'catvehicle_gps_action' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_gps_action'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'catvehicle_tests' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cmdvel2gazebo' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/cmdvel2gazebo'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'control_toolbox' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dataspeed_can_msg_filters' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dataspeed_can_tools' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_tools'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_description' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_description'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_gazebo' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gazebo'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_msgs' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_msgs'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'drcsim_model_resources' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/drcsim_model_resources'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'example_pkg' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'iris_fira_simulation' in 'src/simulation/src/iris_fira_simulation'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lusb' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/lusb'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'obstaclestopper' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/obstaclestopper'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rviz_satellite' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sicktoolbox' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'stepvel' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teb_navigation_demo' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/teb_navigation_demo'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autonomous_vehicle_nosecurity' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_nosecurity'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autonomous_vehicle_project' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_project'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autonomous_vehicle_simple' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/autonomous_vehicle_simple'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dataspeed_can_usb' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_gui' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_gui'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_joystick_demo' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_joystick_demo'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sicktoolbox_wrapper' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox_wrapper'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'catvehicle' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dataspeed_can' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz_can' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'can_sim_tc' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc'
+[0.407s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dbw_mkz' in 'src/simulation/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz'
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.413s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install
+[0.417s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 319 installed packages in /opt/ros/jazzy
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'communication' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'communication' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication', 'merge_install': False, 'path': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication', 'symlink_install': False, 'test_result_base': None}
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'master' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master', 'merge_install': False, 'path': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master', 'symlink_install': False, 'test_result_base': None}
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision', 'merge_install': False, 'path': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/vision', 'symlink_install': False, 'test_result_base': None}
+[0.493s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.495s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication' with build type 'ament_cmake'
+[0.496s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication'
+[0.500s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.506s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master' with build type 'ament_cmake'
+[0.506s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master'
+[0.507s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.507s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.514s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/vision' with build type 'ament_cmake'
+[0.514s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/vision'
+[0.515s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[0.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision -- -j28 -l28
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision -- -j28 -l28
+[0.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision
+[0.744s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision)
+[0.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision' for CMake module files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision' for CMake config files
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'cmake_prefix_path')
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.dsv'
+[0.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.sh'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/bin'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/lib/pkgconfig/vision.pc'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/lib/python3.12/site-packages'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/bin'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.ps1'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.dsv'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.sh'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.bash'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.zsh'
+[0.770s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/colcon-core/packages/vision)
+[0.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision)
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision' for CMake module files
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision' for CMake config files
+[0.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'cmake_prefix_path')
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/hook/cmake_prefix_path.sh'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/bin'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/lib/pkgconfig/vision.pc'
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/lib/python3.12/site-packages'
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/bin'
+[0.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.ps1'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.dsv'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.sh'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.bash'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/vision/package.zsh'
+[0.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/vision/share/colcon-core/packages/vision)
+[0.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[0.821s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(communication)
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication' for CMake module files
+[0.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication' for CMake config files
+[0.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication', 'cmake_prefix_path')
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.dsv'
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.sh'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/bin'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/pkgconfig/communication.pc'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/python3.12/site-packages'
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/bin'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.ps1'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.sh'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.bash'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.zsh'
+[0.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/colcon-core/packages/communication)
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(communication)
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication' for CMake module files
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication' for CMake config files
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication', 'cmake_prefix_path')
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.dsv'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/hook/cmake_prefix_path.sh'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/bin'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/pkgconfig/communication.pc'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/python3.12/site-packages'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/bin'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.sh'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.bash'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/colcon-core/packages/communication)
+[8.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[8.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(master)
+[8.722s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master' for CMake module files
+[8.723s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master' for CMake config files
+[8.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('master', 'cmake_prefix_path')
+[8.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/hook/cmake_prefix_path.ps1'
+[8.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/hook/cmake_prefix_path.dsv'
+[8.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/hook/cmake_prefix_path.sh'
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib'
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/bin'
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/pkgconfig/master.pc'
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/lib/python3.12/site-packages'
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/bin'
+[8.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.ps1'
+[8.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.dsv'
+[8.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.sh'
+[8.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.bash'
+[8.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/master/package.zsh'
+[8.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/master/share/colcon-core/packages/master)
+[8.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.788s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.825s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.825s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.825s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.862s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.863s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/local_setup.ps1'
+[8.865s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/_local_setup_util_ps1.py'
+[8.868s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/setup.ps1'
+[8.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/local_setup.sh'
+[8.871s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/_local_setup_util_sh.py'
+[8.873s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/setup.sh'
+[8.875s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/local_setup.bash'
+[8.876s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/setup.bash'
+[8.878s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/local_setup.zsh'
+[8.879s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/setup.zsh'

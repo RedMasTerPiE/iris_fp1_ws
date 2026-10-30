@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/kinematika.dir/scripts/kinematika.cpp.o -o kinematika 

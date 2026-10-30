@@ -1,0 +1,37 @@
+[0.041s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
+[0.129s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.747s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.830s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.855s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.882s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.009s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.167s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.171s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.339s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.539s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.628s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.935s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.936s] -- Configured cppcheck include dirs: 
+[1.936s] -- Configured cppcheck exclude dirs and/or files: 
+[1.937s] -- Added test 'lint_cmake' to check CMake code style
+[1.938s] -- Added test 'uncrustify' to check C / C++ code style
+[1.939s] -- Configured uncrustify additional arguments: 
+[1.939s] -- Added test 'xmllint' to check XML markup files
+[1.941s] -- Configuring done (1.8s)
+[1.946s] [31mCMake Error at CMakeLists.txt:18 (add_executable):
+[1.946s]   Cannot find source file:
+[1.946s] 
+[1.946s]     scripts/kinematika.cpp
+[1.947s] 
+[1.947s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[1.947s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[1.947s]   .f95 .f03 .hip .ispc
+[1.947s] 
+[1.947s] [0m
+[1.948s] [31mCMake Error at CMakeLists.txt:18 (add_executable):
+[1.948s]   No SOURCES given to target: kinematika
+[1.948s] 
+[1.948s] [0m
+[1.948s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.961s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+[1.967s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28

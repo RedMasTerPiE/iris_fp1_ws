@@ -7,20 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-<<<<<<< HEAD
 add_executable(ackermannSteering scripts/ackermannSteering.cpp)
+add_executable(kinematics scripts/kinematics.cpp)
+
+ament_target_dependencies(ackermannSteering rclcpp geometry_msgs std_msgs)
 
 install(TARGETS
   ackermannSteering
+  kinematics
   DESTINATION lib/${PROJECT_NAME}
 )
-
-=======
->>>>>>> 8113f073493ab82326ffe04b9bf90401085243c6
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

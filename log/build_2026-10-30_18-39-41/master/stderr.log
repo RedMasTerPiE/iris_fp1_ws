@@ -1,0 +1,11 @@
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/kinematika.cpp:[m[K In function ‘[01m[Kdouble[01;32m[K turningRadius[m[K(double, double, double)[m[K’:
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/kinematika.cpp:29:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KwheelBase[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   29 | double turningRadius([01;35m[Kdouble wheelBase[m[K, double targetX, double targetY)
+      |                      [01;35m[K~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/kinematika.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/kinematika.cpp:70:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kspeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   70 |     double [01;35m[Kspeed[m[K = speedTarget(dist, turningR);
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/kinematika.cpp:72:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpacketSteer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   72 |     int [01;35m[KpacketSteer[m[K = -static_cast<int>(lround(steerAngle));
+      |         [01;35m[K^~~~~~~~~~~[m[K

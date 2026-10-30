@@ -1,293 +1,208 @@
-// Teleop + autonomous input for the IRIS car, as one ROS 2 node.
-//
-// Usage: ros2 run communication udpSender [host] [port] [max_pwm] [max_steer_deg]
-//   defaults: 127.0.0.1 12151 150 25
-//
-// Two sources of commands, both sent to the simulation over UDP at 20 Hz:
-//   * Keyboard, hold to drive:  W forward   S reverse   A steer left   D steer right
-//   * ROS topic /drive_command (std_msgs/Int32MultiArray [pwm, steer_deg]),
-//     for example from ackermannSteering
-// Who drives: a held WASD key wins; otherwise a fresh /drive_command;
-// otherwise nobody (zeros are still sent, as the keep-alive).
-//
-// Other keys:  Space = stop and switch autonomous OFF   E = autonomous ON
-//              Q or Esc = quit
-//
-// Keyboard events come straight from /dev/input/event* (evdev), so key RELEASE
-// is detectable. Without keyboard access the node still works for /drive_command.
-
 #include <arpa/inet.h>
 #include <endian.h>
-#include <fcntl.h>
-#include <linux/input.h>
 #include <netinet/in.h>
-#include <poll.h>
-#include <sys/ioctl.h>
 #include <sys/socket.h>
+#include <termios.h>
 #include <unistd.h>
 
 #include <algorithm>
 #include <chrono>
 #include <cstdint>
 #include <cstdio>
-#include <cstdlib>
 #include <cstring>
 #include <memory>
 #include <string>
-#include <vector>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 
-using namespace std;
+namespace std;
 
 namespace {
 
 constexpr char kHeader[4] = {'I', 'R', 'I', 'S'};
 constexpr size_t kPacketSize = 12;
-constexpr auto kPeriod = chrono::milliseconds(50);  // 20 Hz
-constexpr int32_t kRampStep = 25;                   // 0 -> 150 pwm in ~300 ms
-constexpr double kAutoTimeout = 0.3;                // s: older /drive_command counts as gone
+constexpr auto kPeriod = chrono::milliseconds(50);        // 20 Hz
+constexpr auto kExternalTimeout = chrono::milliseconds(300);
 
-enum class Source { kIdle, kManual, kAuto };
-
-// Who drives this tick: held keys win, then a fresh command from the topic.
-Source pick_source(bool manual, bool auto_enabled, bool auto_fresh) {
-    if (manual) return Source::kManual;
-    if (auto_enabled && auto_fresh) return Source::kAuto;
-    return Source::kIdle;
-}
-
-const char *source_name(Source s) {
-    switch (s) {
-        case Source::kManual: return "manual (keyboard)";
-        case Source::kAuto:   return "autonomous (/drive_command)";
-        default:              return "idle";
-    }
-}
+constexpr int32_t kPwmStep = 25;
+constexpr int32_t kSteerStep = 10;
+constexpr int32_t kPwmMax = 255;
+constexpr int32_t kSteerMax = 90;
 
 void build_packet(uint8_t (&buf)[kPacketSize], int32_t pwm, int32_t steer) {
-    pwm = clamp<int32_t>(pwm, -255, 255);
-    // htole32 keeps the wire format little-endian on any host
-    uint32_t pwm_le = htole32(static_cast<uint32_t>(pwm));
-    uint32_t steer_le = htole32(static_cast<uint32_t>(steer));
+  pwm = clamp<int32_t>(pwm, -kPwmMax, kPwmMax);
+  steer = clamp<int32_t>(steer, -kSteerMax, kSteerMax);
+  // htole32 keeps the wire format little-endian on any host
+  uint32_t pwm_le = htole32(static_cast<uint32_t>(pwm));
+  uint32_t steer_le = htole32(static_cast<uint32_t>(steer));
 
-    memcpy(buf, kHeader, sizeof(kHeader));
-    memcpy(buf + 4, &pwm_le, sizeof(pwm_le));
-    memcpy(buf + 8, &steer_le, sizeof(steer_le));
+  memcpy(buf, kHeader, sizeof(kHeader));
+  memcpy(buf + 4, &pwm_le, sizeof(pwm_le));
+  memcpy(buf + 8, &steer_le, sizeof(steer_le));
 }
-
-// Every /dev/input/event* that is a real keyboard with a W key, claimed
-// exclusively so keystrokes go only to us, not the terminal.
-vector<int> open_keyboards() {
-    vector<int> fds;
-    for (int n = 0; n < 64; ++n) {
-        char path[32];
-        snprintf(path, sizeof(path), "/dev/input/event%d", n);
-
-        int fd = open(path, O_RDONLY | O_NONBLOCK);
-        if (fd < 0) continue;  // device missing or no permission
-
-        // (a) does it report key events at all? (rules out mice/touchpads)
-        unsigned char ev_bits[EV_MAX / 8 + 1] = {};
-        if (ioctl(fd, EVIOCGBIT(0, sizeof(ev_bits)), ev_bits) < 0 ||
-            !(ev_bits[EV_KEY / 8] & (1 << (EV_KEY % 8)))) {
-            close(fd);
-            continue;
-        }
-
-        // (b) does it specifically have a W key? (rules out power buttons)
-        unsigned char key_bits[KEY_MAX / 8 + 1] = {};
-        if (ioctl(fd, EVIOCGBIT(EV_KEY, sizeof(key_bits)), key_bits) < 0 ||
-            !(key_bits[KEY_W / 8] & (1 << (KEY_W % 8)))) {
-            close(fd);
-            continue;
-        }
-
-        // (c) grab it: while teleop runs, keys type nothing into the terminal
-        if (ioctl(fd, EVIOCGRAB, 1) < 0) {
-            close(fd);
-            continue;
-        }
-
-        fds.push_back(fd);
-    }
-    return fds;
-}
-
-// move `current` toward `target` by at most `step` (soft start/stop ramp)
-int32_t ramp_toward(int32_t current, int32_t target, int32_t step) {
-    if (current < target) return min(current + step, target);
-    if (current > target) return max(current - step, target);
-    return current;
-}
-
-// The ROS side: remembers the latest /drive_command.
-class DriveInput : public rclcpp::Node {
-public:
-    DriveInput() : Node("udp_sender") {
-        sub_ = create_subscription<std_msgs::msg::Int32MultiArray>(
-            "/drive_command", 10, [this](const std_msgs::msg::Int32MultiArray &m) {
-                if (m.data.size() < 2) return;
-                pwm_ = m.data[0];
-                steer_ = m.data[1];
-                last_ = chrono::steady_clock::now();
-            });
-    }
-
-    bool fresh() const {   // did a command arrive recently?
-        return chrono::duration<double>(chrono::steady_clock::now() - last_).count()
-               <= kAutoTimeout;
-    }
-    int32_t pwm() const { return pwm_; }
-    int32_t steer() const { return steer_; }
-
-private:
-    int32_t pwm_ = 0, steer_ = 0;
-    chrono::steady_clock::time_point last_{};
-    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr sub_;
-};
 
 }  // namespace
 
-int main(int argc, char **argv) {
-    rclcpp::init(argc, argv);
-    vector<string> args = rclcpp::remove_ros_arguments(argc, argv);  // our own arguments only
-    const char *host = args.size() > 1 ? args[1].c_str() : "127.0.0.1";
-    int port = args.size() > 2 ? atoi(args[2].c_str()) : 12151;
-    int32_t max_pwm = args.size() > 3 ? atoi(args[3].c_str()) : 150;
-    int32_t max_steer = args.size() > 4 ? atoi(args[4].c_str()) : 25;
+class UdpSender : public rclcpp::Node {
+ public:
+  UdpSender() : Node("udp_sender") {
+    host_ = declare_parameter<string>("host", "127.0.0.1");
+    port_ = declare_parameter<int>("port", 12151);
+    topic_ = declare_parameter<string>("cmd_topic", "car_cmd");
 
-    int sock = socket(AF_INET, SOCK_DGRAM, 0);
-    if (sock < 0) {
-        perror("socket");
-        return 1;
+    sock_ = socket(AF_INET, SOCK_DGRAM, 0);
+    if (sock_ < 0) {
+      throw runtime_error("failed to create UDP socket");
     }
 
-    sockaddr_in addr{};
-    addr.sin_family = AF_INET;
-    addr.sin_port = htons(static_cast<uint16_t>(port));
-    if (inet_pton(AF_INET, host, &addr.sin_addr) != 1) {
-        fprintf(stderr, "Invalid host: %s\n", host);
-        close(sock);
-        return 1;
+    addr_.sin_family = AF_INET;
+    addr_.sin_port = htons(static_cast<uint16_t>(port_));
+    if (inet_pton(AF_INET, host_.c_str(), &addr_.sin_addr) != 1) {
+      close(sock_);
+      throw runtime_error("invalid host: " + host_);
     }
 
-    vector<int> kb = open_keyboards();
-    if (kb.empty()) {
-        fprintf(stderr,
-                "No keyboard with W/A/S/D keys found: /drive_command only.\n"
-                "For WASD: sudo usermod -aG input $USER  (then log out/in), or run with sudo.\n");
+    // external commands (e.g. from ackermannSteering): data = [pwm, steer_deg]
+    sub_ = create_subscription<std_msgs::msg::Int32MultiArray>(
+        topic_, 10,
+        [this](std_msgs::msg::Int32MultiArray::SharedPtr msg) {
+          if (msg->data.size() < 2) return;
+          ext_pwm_ = msg->data[0];
+          ext_steer_ = msg->data[1];
+          last_ext_ = chrono::steady_clock::now();
+          have_ext_ = true;
+        });
+
+    enable_raw_mode();
+
+    timer_ = create_wall_timer(kPeriod, [this]() { tick(); });
+
+    RCLCPP_INFO(get_logger(), "Sending UDP to %s:%d @ 20 Hz, listening on /%s",
+                host_.c_str(), port_, topic_.c_str());
+    if (kb_enabled_) {
+      RCLCPP_INFO(get_logger(),
+                  "WASD: W/S = pwm +/-%d, A/D = steer -/+%d deg, "
+                  "SPACE = stop, C = center steer",
+                  kPwmStep, kSteerStep);
     }
+  }
 
-    auto node = make_shared<DriveInput>();
-    rclcpp::executors::SingleThreadedExecutor executor;
-    executor.add_node(node);
-
-    printf("Sending to %s:%d at 20 Hz\n", host, port);
-    printf("hold W/S = drive, A/D = steer | Space = stop + autonomous off | E = autonomous on | Q or Esc = quit\n");
-    printf("max_pwm=%d  max_steer=%d deg (keyboard)\n", max_pwm, max_steer);
-
-    bool held_w = false, held_a = false, held_s = false, held_d = false;
-    bool auto_enabled = true;
-    bool running = true;
-    Source last_source = Source::kIdle;
-    int32_t pwm = 0, steer = 0;  // what is being sent right now
+  ~UdpSender() override {
+    restore_terminal();
+    // stop the car, keep the current steering angle (like the template)
     uint8_t packet[kPacketSize];
-    auto next_send = chrono::steady_clock::now();
+    build_packet(packet, 0, last_steer_sent_);
+    sendto(sock_, packet, sizeof(packet), 0,
+           reinterpret_cast<sockaddr *>(&addr_), sizeof(addr_));
+    close(sock_);
+    printf("Stopped\n");
+  }
 
-    vector<pollfd> pfds;
-    for (int fd : kb) pfds.push_back(pollfd{fd, POLLIN, 0});
+ private:
+  void enable_raw_mode() {
+    if (!isatty(STDIN_FILENO)) {
+      RCLCPP_WARN(get_logger(), "stdin is not a TTY, keyboard control disabled");
+      return;
+    }
+    tcgetattr(STDIN_FILENO, &orig_term_);
+    termios raw = orig_term_;
+    raw.c_lflag &= ~(ICANON | ECHO);  // ISIG stays on, so Ctrl-C still works
+    raw.c_cc[VMIN] = 0;               // non-blocking read
+    raw.c_cc[VTIME] = 0;
+    tcsetattr(STDIN_FILENO, TCSANOW, &raw);
+    kb_enabled_ = true;
+  }
 
-    while (running && rclcpp::ok()) {
-        // (1) sleep until a key event or the next 20 Hz tick, whichever first
-        auto now = chrono::steady_clock::now();
-        if (now < next_send) {
-            int wait_ms = static_cast<int>(
-                chrono::duration_cast<chrono::milliseconds>(next_send - now).count());
-            poll(pfds.data(), pfds.size(), wait_ms);
-        }
+  void restore_terminal() {
+    if (kb_enabled_) {
+      tcsetattr(STDIN_FILENO, TCSANOW, &orig_term_);
+      kb_enabled_ = false;
+    }
+  }
 
-        // (2) drain every pending key event so state is up to date
-        for (pollfd &p : pfds) {
-            for (;;) {
-                input_event ev{};
-                ssize_t n = read(p.fd, &ev, sizeof(ev));
-                if (n != static_cast<ssize_t>(sizeof(ev))) break;  // queue empty
-                if (ev.type != EV_KEY) continue;  // ignore sync/LED bookkeeping
-                bool down = ev.value != 0;        // 1=press, 2=repeat, 0=release
-                switch (ev.code) {
-                    case KEY_W:     held_w = down; break;
-                    case KEY_A:     held_a = down; break;
-                    case KEY_S:     held_s = down; break;
-                    case KEY_D:     held_d = down; break;
-                    case KEY_SPACE:
-                        if (ev.value == 1) {
-                            held_w = held_a = held_s = held_d = false;
-                            auto_enabled = false;
-                            printf("autonomous OFF (press E to enable)\n");
-                        }
-                        break;
-                    case KEY_E:
-                        if (ev.value == 1 && !auto_enabled) {
-                            auto_enabled = true;
-                            printf("autonomous ON\n");
-                        }
-                        break;
-                    case KEY_Q:
-                    case KEY_ESC:   if (down) running = false; break;
-                    default: break;
-                }
-            }
-        }
+  void poll_keyboard() {
+    char c;
+    while (read(STDIN_FILENO, &c, 1) == 1) {
+      switch (c) {
+        case 'w': case 'W': kb_pwm_ += kPwmStep; break;
+        case 's': case 'S': kb_pwm_ -= kPwmStep; break;
+        case 'a': case 'A': kb_steer_ -= kSteerStep; break;
+        case 'd': case 'D': kb_steer_ += kSteerStep; break;
+        case ' ':           kb_pwm_ = 0; break;
+        case 'c': case 'C': kb_steer_ = 0; break;
+        default: break;
+      }
+      kb_pwm_ = clamp<int32_t>(kb_pwm_, -kPwmMax, kPwmMax);
+      kb_steer_ = clamp<int32_t>(kb_steer_, -kSteerMax, kSteerMax);
+    }
+  }
 
-        // (2b) let ROS deliver any /drive_command messages that arrived
-        executor.spin_some();
+  void tick() {
+    if (kb_enabled_) poll_keyboard();
 
-        // (3) pick the source, then targets from it; conflicting keys cancel (W+S -> 0)
-        bool manual = held_w || held_a || held_s || held_d;
-        Source source = pick_source(manual, auto_enabled, node->fresh());
-        if (source != last_source) {
-            printf("mode: %s\n", source_name(source));
-            last_source = source;
-        }
+    bool external =
+        have_ext_ &&
+        (chrono::steady_clock::now() - last_ext_) < kExternalTimeout;
 
-        int32_t pwm_target = 0, steer_target = 0;
-        if (source == Source::kManual) {
-            if (held_w != held_s) pwm_target = held_w ? max_pwm : -max_pwm;
-            if (held_a != held_d) steer_target = held_a ? max_steer : -max_steer;
-        } else if (source == Source::kAuto) {
-            pwm_target = clamp<int32_t>(node->pwm(), -max_pwm, max_pwm);  // max_pwm is a speed cap
-            steer_target = node->steer();   // the controller already limits its own steering
-        }
+    int32_t pwm = external ? ext_pwm_ : kb_pwm_;
+    int32_t steer = external ? ext_steer_ : kb_steer_;
+    pwm = clamp<int32_t>(pwm, -kPwmMax, kPwmMax);
+    steer = clamp<int32_t>(steer, -kSteerMax, kSteerMax);
+    last_steer_sent_ = steer;
 
-        // (4) soft ramp toward the targets, no jerking
-        pwm = ramp_toward(pwm, pwm_target, kRampStep);
-        steer = ramp_toward(steer, steer_target, kRampStep);
-
-        // (5) always send, even idle: the receiver stops the car after
-        //     0.2 s of silence, so the stream itself is the keep-alive
-        build_packet(packet, pwm, steer);
-        if (sendto(sock, packet, sizeof(packet), 0,
-                   reinterpret_cast<sockaddr *>(&addr), sizeof(addr)) < 0) {
-            perror("sendto");
-        }
-
-        // (6) next tick; if we fell behind, resync instead of bursting
-        next_send += kPeriod;
-        if (chrono::steady_clock::now() > next_send)
-            next_send = chrono::steady_clock::now();
+    uint8_t packet[kPacketSize];
+    build_packet(packet, pwm, steer);
+    if (sendto(sock_, packet, sizeof(packet), 0,
+               reinterpret_cast<sockaddr *>(&addr_), sizeof(addr_)) < 0) {
+      perror("sendto");
     }
 
-    // last packet: explicit stop, so the car halts now instead of waiting
-    // for the receiver's own 0.2 s timeout once we go silent
-    build_packet(packet, 0, 0);
-    sendto(sock, packet, sizeof(packet), 0,
-           reinterpret_cast<sockaddr *>(&addr), sizeof(addr));
-    printf("Stopped\n");
+    if (pwm != last_pwm_ || steer != last_steer_ || external != last_external_) {
+      printf("\r[%s] pwm=%4d steer=%4d   ", external ? "EXT" : "KEY", pwm,
+                  steer);
+      fflush(stdout);
+      last_pwm_ = pwm;
+      last_steer_ = steer;
+      last_external_ = external;
+    }
+  }
 
-    for (int fd : kb) close(fd);  // closing releases the keyboard grab
-    close(sock);
+  // params / socket
+  string host_, topic_;
+  int port_{12151};
+  int sock_{-1};
+  sockaddr_in addr_{};
+
+  // ROS
+  rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr sub_;
+  rclcpp::TimerBase::SharedPtr timer_;
+
+  // keyboard state
+  termios orig_term_{};
+  bool kb_enabled_{false};
+  int32_t kb_pwm_{0}, kb_steer_{0};
+
+  // external state
+  bool have_ext_{false};
+  int32_t ext_pwm_{0}, ext_steer_{0};
+  chrono::steady_clock::time_point last_ext_{};
+
+  // bookkeeping
+  int32_t last_steer_sent_{0};
+  int32_t last_pwm_{9999}, last_steer_{9999};
+  bool last_external_{false};
+};
+
+int main(int argc, char **argv) {
+  rclcpp::init(argc, argv);
+  try {
+    rclcpp::spin(make_shared<UdpSender>());
+  } catch (const exception &e) {
+    fprintf(stderr, "Fatal: %s\n", e.what());
     rclcpp::shutdown();
-    return 0;
+    return 1;
+  }
+  rclcpp::shutdown();
+  return 0;
 }

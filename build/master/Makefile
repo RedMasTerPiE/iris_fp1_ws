@@ -210,6 +210,19 @@ ackermannSteering/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ackermannSteering.dir/build.make CMakeFiles/ackermannSteering.dir/build
 .PHONY : ackermannSteering/fast
 
+#=============================================================================
+# Target rules for targets named kinematics
+
+# Build rule for target.
+kinematics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kinematics
+.PHONY : kinematics
+
+# fast build rule for target.
+kinematics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics.dir/build.make CMakeFiles/kinematics.dir/build
+.PHONY : kinematics/fast
+
 scripts/ackermannSteering.o: scripts/ackermannSteering.cpp.o
 .PHONY : scripts/ackermannSteering.o
 
@@ -234,6 +247,30 @@ scripts/ackermannSteering.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ackermannSteering.dir/build.make CMakeFiles/ackermannSteering.dir/scripts/ackermannSteering.cpp.s
 .PHONY : scripts/ackermannSteering.cpp.s
 
+scripts/kinematics.o: scripts/kinematics.cpp.o
+.PHONY : scripts/kinematics.o
+
+# target to build an object file
+scripts/kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics.dir/build.make CMakeFiles/kinematics.dir/scripts/kinematics.cpp.o
+.PHONY : scripts/kinematics.cpp.o
+
+scripts/kinematics.i: scripts/kinematics.cpp.i
+.PHONY : scripts/kinematics.i
+
+# target to preprocess a source file
+scripts/kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics.dir/build.make CMakeFiles/kinematics.dir/scripts/kinematics.cpp.i
+.PHONY : scripts/kinematics.cpp.i
+
+scripts/kinematics.s: scripts/kinematics.cpp.s
+.PHONY : scripts/kinematics.s
+
+# target to generate assembly for a file
+scripts/kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics.dir/build.make CMakeFiles/kinematics.dir/scripts/kinematics.cpp.s
+.PHONY : scripts/kinematics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... master_uninstall"
 	@echo "... uninstall"
 	@echo "... ackermannSteering"
+	@echo "... kinematics"
 	@echo "... scripts/ackermannSteering.o"
 	@echo "... scripts/ackermannSteering.i"
 	@echo "... scripts/ackermannSteering.s"
+	@echo "... scripts/kinematics.o"
+	@echo "... scripts/kinematics.i"
+	@echo "... scripts/kinematics.s"
 .PHONY : help
 
 

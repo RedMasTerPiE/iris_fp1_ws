@@ -1,0 +1,36 @@
+[0.038s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.180s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.979s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.156s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.188s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.227s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.272s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.432s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.436s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.560s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.828s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.942s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.041s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.403s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.405s] -- Configured cppcheck include dirs: 
+[2.405s] -- Configured cppcheck exclude dirs and/or files: 
+[2.406s] -- Added test 'lint_cmake' to check CMake code style
+[2.407s] -- Added test 'uncrustify' to check C / C++ code style
+[2.407s] -- Configured uncrustify additional arguments: 
+[2.409s] -- Added test 'xmllint' to check XML markup files
+[2.411s] -- Configuring done (2.3s)
+[2.454s] -- Generating done (0.0s)
+[2.468s] -- Build files have been written to: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[2.637s] [ 25%] Building CXX object CMakeFiles/udpReceiver.dir/scripts/udpReceiver.cpp.o
+[2.662s] [ 50%] Building CXX object CMakeFiles/udpSender.dir/scripts/udpSender.cpp.o
+[8.075s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpReceiver.cpp: In function ‘int main(int, char**)’:
+[8.075s] /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpReceiver.cpp:122:52: error: conversion from ‘std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >’ to non-scalar type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} requested
+[8.075s]   122 |     std::string args = rclcpp::remove_ros_arguments(argc, argv);
+[8.076s]       |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[10.445s] gmake[2]: *** [CMakeFiles/udpReceiver.dir/build.make:76: CMakeFiles/udpReceiver.dir/scripts/udpReceiver.cpp.o] Error 1
+[10.446s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/udpReceiver.dir/all] Error 2
+[10.447s] gmake[1]: *** Waiting for unfinished jobs....
+[22.513s] [ 75%] Linking CXX executable udpSender
+[23.357s] [ 75%] Built target udpSender
+[23.360s] gmake: *** [Makefile:146: all] Error 2
+[23.366s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28

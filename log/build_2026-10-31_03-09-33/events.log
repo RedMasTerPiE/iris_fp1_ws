@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000413] (-) JobUnselected: {'identifier': 'autonomous_vehicle_nosecurity'}
+[0.000527] (-) JobUnselected: {'identifier': 'autonomous_vehicle_project'}
+[0.000662] (-) JobUnselected: {'identifier': 'autonomous_vehicle_simple'}
+[0.000914] (-) JobUnselected: {'identifier': 'autonomous_vehicle_teb'}
+[0.000990] (-) JobUnselected: {'identifier': 'avisengine_environment'}
+[0.001046] (-) JobUnselected: {'identifier': 'avisengine_resources'}
+[0.001093] (-) JobUnselected: {'identifier': 'can_sim_tc'}
+[0.001144] (-) JobUnselected: {'identifier': 'catvehicle'}
+[0.001199] (-) JobUnselected: {'identifier': 'catvehicle_gazebo'}
+[0.001250] (-) JobUnselected: {'identifier': 'catvehicle_gps_action'}
+[0.001313] (-) JobUnselected: {'identifier': 'catvehicle_tests'}
+[0.001368] (-) JobUnselected: {'identifier': 'cmdvel2gazebo'}
+[0.001422] (-) JobUnselected: {'identifier': 'communication'}
+[0.001527] (-) JobUnselected: {'identifier': 'control_toolbox'}
+[0.001581] (-) JobUnselected: {'identifier': 'dataspeed_can'}
+[0.001627] (-) JobUnselected: {'identifier': 'dataspeed_can_msg_filters'}
+[0.001673] (-) JobUnselected: {'identifier': 'dataspeed_can_tools'}
+[0.001717] (-) JobUnselected: {'identifier': 'dataspeed_can_usb'}
+[0.001766] (-) JobUnselected: {'identifier': 'dbw_mkz'}
+[0.001830] (-) JobUnselected: {'identifier': 'dbw_mkz_can'}
+[0.001881] (-) JobUnselected: {'identifier': 'dbw_mkz_description'}
+[0.001942] (-) JobUnselected: {'identifier': 'dbw_mkz_gazebo'}
+[0.001993] (-) JobUnselected: {'identifier': 'dbw_mkz_gui'}
+[0.002042] (-) JobUnselected: {'identifier': 'dbw_mkz_joystick_demo'}
+[0.002091] (-) JobUnselected: {'identifier': 'dbw_mkz_msgs'}
+[0.002140] (-) JobUnselected: {'identifier': 'drcsim_model_resources'}
+[0.002190] (-) JobUnselected: {'identifier': 'example_pkg'}
+[0.002240] (-) JobUnselected: {'identifier': 'iris_fira_simulation'}
+[0.002288] (-) JobUnselected: {'identifier': 'lusb'}
+[0.002337] (-) JobUnselected: {'identifier': 'master'}
+[0.002385] (-) JobUnselected: {'identifier': 'obstaclestopper'}
+[0.002433] (-) JobUnselected: {'identifier': 'rviz_satellite'}
+[0.002481] (-) JobUnselected: {'identifier': 'sicktoolbox'}
+[0.002529] (-) JobUnselected: {'identifier': 'sicktoolbox_wrapper'}
+[0.002577] (-) JobUnselected: {'identifier': 'stepvel'}
+[0.002625] (-) JobUnselected: {'identifier': 'teb_navigation_demo'}
+[0.002681] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.002742] (vision) JobStarted: {'identifier': 'vision'}
+[0.028164] (vision) JobProgress: {'identifier': 'vision', 'progress': 'cmake'}
+[0.030319] (vision) JobProgress: {'identifier': 'vision', 'progress': 'build'}
+[0.032869] (vision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision', '--', '-j28', '-l28'], 'cwd': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/farrel', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'claude-code_2-1-314_agent', 'USER': 'farrel', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'CLAUDE_AGENT_SDK_VERSION': '0.3.314', 'CLAUDE_CODE_SESSION_ATTENDED': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'CLAUDE_CODE_MESSAGING_TOKEN': '11877ba4522339b69cac7b03e3c2a2ac', 'CLAUDE_CODE_MAX_OUTPUT_TOKENS': '0', 'HOME': '/home/farrel', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'OLDPWD': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/farrel/.nvm/versions/node/v26.11.1/bin', 'NVM_INC': '/home/farrel/.nvm/versions/node/v26.11.1/include/node', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-e810ad4c-1.14-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'CLAUDE_CODE_CHILD_SESSION': '1', 'COPILOT_OTEL_FILE_EXPORTER_PATH': '/dev/null', 'MANAGERPID': '2832', 'SYSTEMD_EXEC_PID': '3237', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4040', 'NVM_DIR': '/home/farrel/.nvm', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'farrel', 'CLAUDE_CODE_EMIT_STARTUP_TIMING': '1', 'JOURNAL_STREAM': '10:34970', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'CLAUDE_CODE_QUESTION_PREVIEW_FORMAT': 'markdown', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'farrel', 'ANTHROPIC_BASE_URL': 'https://ai.bluepack.my.id/anthropic', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/farrel/.nvm/versions/node/v26.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/farrel-Legion-5-15IRX10:@/tmp/.ICE-unix/3192,unix/farrel-Legion-5-15IRX10:/tmp/.ICE-unix/3192', 'INVOCATION_ID': '6dd8a502a1f6476d89eb12662cd05e0f', 'VSCODE_NODE_COMPILE_CACHE_ROOT': '/usr/share/code/resources/app/node-compile-cache', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_EFFORT': 'medium', 'DISPLAY': ':1', 'CLAUDE_PID': '24991', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'CLAUDE_CODE_STARTUP_FAILURE_RESULTS': '1', 'ANTHROPIC_AUTH_TOKEN': 'bluepack_19c546358a8753d5015be2d486143267e5f6853c4ebf3587', 'MXC_BIN_DIR': '/usr/share/code/resources/app/node_modules.asar.unpacked/@microsoft/mxc-sdk/bin', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'CLAUDE_CODE_SESSION_ID': '1422ac41-3ff3-4200-b3b4-2f1e2bdb171c', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/farrel/.config/Code/CachedData/2a59476c9bfcb90b3ddc372c36762471b7dfad1c', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/farrel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/farrel/.vscode/extensions/anthropic.claude-code-2.1.314-linux-x64/resources/native-binary/claude', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'CLAUDE_CODE_ENABLE_TASKS': '0', 'COLCON': '1', 'COPILOT_CLI_ENABLED_FEATURE_FLAGS': 'SHELL_SPAWN_BACKEND', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/farrel/.nvm/versions/node/v26.11.1/share/man:', 'CLAUDE_CODE_MESSAGING_SOCKET': '/run/user/1000/cc-socks/24991.sock', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4040'}), 'shell': False}
+[0.097897] (-) TimerEvent: {}
+[0.155514] (vision) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.198201] (-) TimerEvent: {}
+[0.298584] (-) TimerEvent: {}
+[0.399021] (-) TimerEvent: {}
+[0.499312] (-) TimerEvent: {}
+[0.599594] (-) TimerEvent: {}
+[0.700082] (-) TimerEvent: {}
+[0.800498] (-) TimerEvent: {}
+[0.865186] (vision) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.900654] (-) TimerEvent: {}
+[1.001006] (-) TimerEvent: {}
+[1.053090] (vision) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.101150] (-) TimerEvent: {}
+[1.102184] (vision) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.163078] (vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201372] (-) TimerEvent: {}
+[1.228178] (vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.301553] (-) TimerEvent: {}
+[1.401893] (-) TimerEvent: {}
+[1.502488] (-) TimerEvent: {}
+[1.526015] (vision) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.537350] (vision) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.602653] (-) TimerEvent: {}
+[1.702987] (-) TimerEvent: {}
+[1.803324] (-) TimerEvent: {}
+[1.866245] (vision) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.903475] (-) TimerEvent: {}
+[1.933420] (vision) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.003731] (-) TimerEvent: {}
+[2.012442] (vision) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.103906] (-) TimerEvent: {}
+[2.204371] (-) TimerEvent: {}
+[2.304692] (-) TimerEvent: {}
+[2.349292] (vision) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.15.0") \n'}
+[2.358691] (vision) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[2.404872] (-) TimerEvent: {}
+[2.505235] (-) TimerEvent: {}
+[2.605529] (-) TimerEvent: {}
+[2.614681] (vision) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.705808] (-) TimerEvent: {}
+[2.806204] (-) TimerEvent: {}
+[2.906639] (-) TimerEvent: {}
+[2.909789] (vision) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.910591] (vision) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.910908] (vision) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.914005] (vision) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.916126] (vision) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.916534] (vision) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.918920] (vision) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.921811] (vision) StdoutLine: {'line': b'-- Configuring done (2.8s)\n'}
+[2.971779] (vision) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.985345] (vision) StdoutLine: {'line': b'-- Build files have been written to: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/vision\n'}
+[3.006823] (-) TimerEvent: {}
+[3.100539] (vision) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/bev.dir/scripts/bev.cpp.o\n'}
+[3.107044] (-) TimerEvent: {}
+[3.207409] (-) TimerEvent: {}
+[3.307772] (-) TimerEvent: {}
+[3.408152] (-) TimerEvent: {}
+[3.508510] (-) TimerEvent: {}
+[3.608831] (-) TimerEvent: {}
+[3.696832] (vision) StderrLine: {'line': b'/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/vision/scripts/bev.cpp:35:10: fatal error: cv_bridge/cv_bridge.h: No such file or directory\n'}
+[3.697467] (vision) StderrLine: {'line': b'   35 | #include "cv_bridge/cv_bridge.h"\n'}
+[3.697822] (vision) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~~~~~~~\n'}
+[3.698165] (vision) StderrLine: {'line': b'compilation terminated.\n'}
+[3.704502] (vision) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bev.dir/build.make:76: CMakeFiles/bev.dir/scripts/bev.cpp.o] Error 1\n'}
+[3.705548] (vision) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bev.dir/all] Error 2\n'}
+[3.706474] (vision) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.709016] (-) TimerEvent: {}
+[3.710979] (vision) CommandEnded: {'returncode': 2}
+[3.742739] (vision) JobEnded: {'identifier': 'vision', 'rc': 2}
+[3.753685] (-) EventReactorShutdown: {}

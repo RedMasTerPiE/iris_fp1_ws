@@ -7,9 +7,27 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(sensor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+add_executable(bev scripts/bev.cpp)
+
+# Link OpenCV
+target_include_directories(bev PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(bev ${OpenCV_LIBRARIES})
+
+# Link ROS 2 dependencies
+ament_target_dependencies(bev cv_bridge sensor_msgs)
+
+# Fixed: Added closing parenthesis
+install(TARGETS
+  bev
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
