@@ -16,7 +16,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 
-namespace std;
+using namespace std;  //lgtm [cpp/using_namespace]
 
 namespace {
 

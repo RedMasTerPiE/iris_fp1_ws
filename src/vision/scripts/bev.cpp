@@ -1,33 +1,42 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/image.hpp>
-#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.hpp> // Added for image encodings
+#include <cv_bridge/cv_bridge.hpp>
 #include <opencv2/opencv.hpp>
 #include <vector>
+#include <memory>
 
-namespace std;
-namespace cv;
+using namespace std;
+using namespace cv;
 
 class BEV : public rclcpp::Node {
 public:
     BEV() : Node("bev") {
-        // Ganti "/camera/image_raw" dengan nama topik kamera aktual dari Gazebo simulasi IRIS
         img_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/catvehicle/camera_front/image_raw_front", 10,
-            bind(&BEV::imageCallback, this, placeholders::_1));
+            std::bind(&BEV::imageCallback, this, std::placeholders::_1)); // Explicit placeholders
 
-        RCLCPP_INFO(this->get_logger(), "Vision Node (BEV & Thresholding) berjalan.");
+        // Create a tuning window and trackbars
+        namedWindow("Tuning", WINDOW_NORMAL);
+        createTrackbar("Top X Width", "Tuning", &top_x_, 100);
+        createTrackbar("Top Y Height", "Tuning", &top_y_, 100);
+        createTrackbar("Bottom X Width", "Tuning", &bottom_x_, 100);
+        createTrackbar("Bottom Y Height", "Tuning", &bottom_y_, 100);
+
+        RCLCPP_INFO(this->get_logger(), "BEV Tuning Node running.");
     }
 
 private:
-    void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg) 
-    {
+    int top_x_ = 40;    // Default 40%
+    int top_y_ = 60;    // Default 60%
+    int bottom_x_ = 0;  // Default 0%
+    int bottom_y_ = 100; // Default 100%
+
+    void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg) {
         cv_bridge::CvImagePtr cv_ptr;
-        try 
-        {
+        try {
             cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-        } 
-        catch (cv_bridge::Exception& e) 
-        {
+        } catch (cv_bridge::Exception& e) {
             RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
             return;
         }
@@ -35,43 +44,28 @@ private:
         Mat frame = cv_ptr->image;
         if (frame.empty()) return;
 
-        // 1. Definisikan Titik Source (Trapesium pada gambar asli)
-        // Nilai (x, y) ini perlu di-tuning (kalibrasi) sesuai posisi dan FOV kamera Gazebo
         int width = frame.cols;
         int height = frame.rows;
         
-        vector<Point2f> src_pts = 
-        {
-            Point2f(width * 0.4f, height * 0.6f), // Kiri Atas
-            Point2f(width * 0.6f, height * 0.6f), // Kanan Atas
-            Point2f(width * 1.0f, height * 1.0f), // Kanan Bawah
-            Point2f(width * 0.0f, height * 1.0f)  // Kiri Bawah
+        // Use live trackbar values for percentages
+        vector<Point2f> src_pts = {
+            Point2f(width * (top_x_ / 100.0f), height * (top_y_ / 100.0f)),             // Top Left
+            Point2f(width * ((100 - top_x_) / 100.0f), height * (top_y_ / 100.0f)),     // Top Right
+            Point2f(width * ((100 - bottom_x_) / 100.0f), height * (bottom_y_ / 100.0f)), // Bottom Right
+            Point2f(width * (bottom_x_ / 100.0f), height * (bottom_y_ / 100.0f))        // Bottom Left
         };
 
-        // 2. Definisikan Titik Destination (Persegi panjang pada gambar BEV)
-        vector<Point2f> dst_pts = 
-        {
-            Point2f(0, 0),                        // Kiri Atas
-            Point2f(width, 0),                    // Kanan Atas
-            Point2f(width, height),               // Kanan Bawah
-            Point2f(0, height)                    // Kiri Bawah
+        vector<Point2f> dst_pts = {
+            Point2f(0, 0), Point2f(width, 0), 
+            Point2f(width, height), Point2f(0, height)
         };
 
-        // 3. Terapkan Warp Perspective (BEV)
         Mat matrix = getPerspectiveTransform(src_pts, dst_pts);
         Mat bev_frame;
         warpPerspective(frame, bev_frame, matrix, frame.size());
 
-        // 4. Thresholding (Contoh: Mengambil warna garis putih)
-        Mat gray, thresh;
-        cvtColor(bev_frame, gray, COLOR_BGR2GRAY);
-        // Mengubah piksel > 200 menjadi putih (255), sisanya hitam (0)
-        threshold(gray, thresh, 200, 255, THRESH_BINARY);
-
-        // Menampilkan hasil menggunakan HighGUI OpenCV untuk proses tuning
         imshow("Original", frame);
         imshow("BEV", bev_frame);
-        imshow("Thresholding", thresh);
         waitKey(1);
     }
 
