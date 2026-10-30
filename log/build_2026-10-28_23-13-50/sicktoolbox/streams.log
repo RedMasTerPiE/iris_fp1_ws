@@ -1,0 +1,20 @@
+[0.303s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/sicktoolbox': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/sicktoolbox
+[0.504s] -- Configuring incomplete, errors occurred!
+[0.505s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[0.505s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.507s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.508s]   CMake did not find one.
+[0.509s] 
+[0.509s]   Could not find a package configuration file provided by "catkin" with any
+[0.510s]   of the following names:
+[0.511s] 
+[0.512s]     catkinConfig.cmake
+[0.513s]     catkin-config.cmake
+[0.513s] 
+[0.514s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.514s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.516s]   provides a separate development package or SDK, be sure it has been
+[0.517s]   installed.
+[0.517s] 
+[0.518s] [0m
+[0.645s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/sicktoolbox' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/sicktoolbox

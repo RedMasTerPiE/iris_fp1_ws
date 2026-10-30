@@ -1,0 +1,40 @@
+[0.192s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/stepvel': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/stepvel
+[2.042s] -- The C compiler identification is GNU 13.3.0
+[2.042s] -- The CXX compiler identification is GNU 13.3.0
+[2.042s] -- Detecting C compiler ABI info
+[2.042s] -- Detecting C compiler ABI info - done
+[2.042s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.043s] -- Detecting C compile features
+[2.043s] -- Detecting C compile features - done
+[2.043s] -- Detecting CXX compiler ABI info
+[2.043s] -- Detecting CXX compiler ABI info - done
+[2.043s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.044s] -- Detecting CXX compile features
+[2.044s] -- Detecting CXX compile features - done
+[2.044s] -- Configuring incomplete, errors occurred!
+[2.044s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[2.044s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.045s]   CMake.
+[2.045s] 
+[2.045s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.045s]   CMake that the project does not need compatibility with older versions.
+[2.046s] 
+[2.046s] [0m
+[2.046s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[2.046s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.047s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.048s]   CMake did not find one.
+[2.048s] 
+[2.048s]   Could not find a package configuration file provided by "catkin" with any
+[2.048s]   of the following names:
+[2.049s] 
+[2.049s]     catkinConfig.cmake
+[2.049s]     catkin-config.cmake
+[2.049s] 
+[2.049s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.050s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.050s]   provides a separate development package or SDK, be sure it has been
+[2.051s]   installed.
+[2.052s] 
+[2.052s] [0m
+[2.076s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/stepvel' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/stepvel

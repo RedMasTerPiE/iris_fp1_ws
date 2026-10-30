@@ -1,0 +1,28 @@
+[0.179s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/stepvel': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/stepvel
+[0.407s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.407s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.407s]   CMake.
+[0.407s] 
+[0.407s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.407s]   CMake that the project does not need compatibility with older versions.
+[0.408s] 
+[0.408s] [0m
+[0.409s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.409s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.409s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.410s]   CMake did not find one.
+[0.410s] 
+[0.410s]   Could not find a package configuration file provided by "catkin" with any
+[0.410s]   of the following names:
+[0.410s] 
+[0.410s]     catkinConfig.cmake
+[0.411s]     catkin-config.cmake
+[0.411s] 
+[0.411s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.411s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.411s]   provides a separate development package or SDK, be sure it has been
+[0.411s]   installed.
+[0.411s] 
+[0.412s] [0m
+[0.412s] -- Configuring incomplete, errors occurred!
+[0.430s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/stepvel' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/stepvel -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/stepvel

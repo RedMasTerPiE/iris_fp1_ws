@@ -1,0 +1,27 @@
+[0.183s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/rviz_satellite': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/rviz_satellite
+[0.408s] -- Distribution: jazzy
+[0.408s] -- Configuring incomplete, errors occurred!
+[0.409s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.409s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.409s]   CMake.
+[0.409s] 
+[0.409s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.410s]   CMake that the project does not need compatibility with older versions.
+[0.410s] 
+[0.411s] [0m
+[0.411s] [31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake:28 (find_package):
+[0.412s]   Could not find a package configuration file provided by "Qt5QtCore" with
+[0.412s]   any of the following names:
+[0.412s] 
+[0.412s]     Qt5QtCoreConfig.cmake
+[0.413s]     qt5qtcore-config.cmake
+[0.413s] 
+[0.413s]   Add the installation prefix of "Qt5QtCore" to CMAKE_PREFIX_PATH or set
+[0.413s]   "Qt5QtCore_DIR" to a directory containing one of the above files.  If
+[0.413s]   "Qt5QtCore" provides a separate development package or SDK, be sure it has
+[0.413s]   been installed.
+[0.414s] Call Stack (most recent call first):
+[0.414s]   CMakeLists.txt:17 (find_package)
+[0.414s] 
+[0.414s] [0m
+[0.434s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/rviz_satellite' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/rviz_satellite

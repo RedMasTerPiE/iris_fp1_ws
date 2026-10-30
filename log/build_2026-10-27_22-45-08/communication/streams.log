@@ -1,0 +1,24 @@
+[0.040s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.200s] [ 50%] Built target udpReceiver
+[0.204s] [100%] Built target udpSender
+[0.284s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.285s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[0.317s] -- Install configuration: ""
+[0.318s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpReceiver
+[0.319s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpSender
+[0.320s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/package_run_dependencies/communication
+[0.320s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/parent_prefix_path/communication
+[0.320s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.sh
+[0.321s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.dsv
+[0.321s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.sh
+[0.322s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.dsv
+[0.322s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.bash
+[0.323s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.sh
+[0.323s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.zsh
+[0.323s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.dsv
+[0.323s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.dsv
+[0.323s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/packages/communication
+[0.324s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig.cmake
+[0.324s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig-version.cmake
+[0.324s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.xml
+[0.324s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication

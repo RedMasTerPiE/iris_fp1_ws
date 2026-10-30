@@ -1,0 +1,32 @@
+[0.207s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/example_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/example_pkg
+[2.009s] -- The C compiler identification is GNU 13.3.0
+[2.010s] -- The CXX compiler identification is GNU 13.3.0
+[2.010s] -- Detecting C compiler ABI info
+[2.011s] -- Detecting C compiler ABI info - done
+[2.011s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.012s] -- Detecting C compile features
+[2.013s] -- Detecting C compile features - done
+[2.013s] -- Detecting CXX compiler ABI info
+[2.013s] -- Detecting CXX compiler ABI info - done
+[2.014s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.014s] -- Detecting CXX compile features
+[2.014s] -- Detecting CXX compile features - done
+[2.076s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[2.076s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.076s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.076s]   CMake did not find one.
+[2.076s] 
+[2.077s]   Could not find a package configuration file provided by "catkin" with any
+[2.077s]   of the following names:
+[2.077s] 
+[2.077s]     catkinConfig.cmake
+[2.077s]     catkin-config.cmake
+[2.077s] 
+[2.078s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.078s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.078s]   provides a separate development package or SDK, be sure it has been
+[2.079s]   installed.
+[2.079s] 
+[2.079s] [0m
+[2.079s] -- Configuring incomplete, errors occurred!
+[2.198s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/example_pkg' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/example_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/example_pkg

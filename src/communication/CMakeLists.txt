@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+add_executable(udpReceiver scripts/udpReceiver.cpp)
+add_executable(udpSender scripts/udpSender.cpp)
+
+ament_target_dependencies(udpReceiver rclcpp std_msgs)
+ament_target_dependencies(udpSender rclcpp std_msgs)
+
+install(TARGETS
+  udpReceiver
+  udpSender
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

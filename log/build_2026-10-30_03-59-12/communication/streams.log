@@ -1,0 +1,53 @@
+[0.039s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[0.125s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.598s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.691s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.723s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.762s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.797s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.101s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.113s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.393s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.462s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.544s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.829s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.863s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.045s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.045s] -- Configured cppcheck include dirs: 
+[2.046s] -- Configured cppcheck exclude dirs and/or files: 
+[2.047s] -- Added test 'lint_cmake' to check CMake code style
+[2.048s] -- Added test 'uncrustify' to check C / C++ code style
+[2.048s] -- Configured uncrustify additional arguments: 
+[2.048s] -- Added test 'xmllint' to check XML markup files
+[2.050s] -- Configuring done (1.9s)
+[2.072s] -- Generating done (0.0s)
+[2.081s] -- Build files have been written to: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[2.253s] [ 25%] [32mBuilding CXX object CMakeFiles/udpReceiver.dir/scripts/udpReceiver.cpp.o[0m
+[2.256s] [ 50%] [32mBuilding CXX object CMakeFiles/udpSender.dir/scripts/udpSender.cpp.o[0m
+[2.437s] [ 75%] [32m[1mLinking CXX executable udpReceiver[0m
+[2.681s] [ 75%] Built target udpReceiver
+[13.206s] [100%] [32m[1mLinking CXX executable udpSender[0m
+[13.516s] [100%] Built target udpSender
+[13.536s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
+[13.538s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication
+[13.549s] -- Install configuration: ""
+[13.552s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpReceiver
+[13.552s] -- Set non-toolchain portion of runtime path of "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpReceiver" to ""
+[13.553s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpSender
+[13.557s] -- Set non-toolchain portion of runtime path of "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/lib/communication/udpSender" to ""
+[13.557s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/package_run_dependencies/communication
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/parent_prefix_path/communication
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.sh
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/ament_prefix_path.dsv
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.sh
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/environment/path.dsv
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.bash
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.sh
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.zsh
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/local_setup.dsv
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.dsv
+[13.558s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/ament_index/resource_index/packages/communication
+[13.559s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig.cmake
+[13.559s] -- Up-to-date: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/cmake/communicationConfig-version.cmake
+[13.559s] -- Installing: /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/communication/share/communication/package.xml
+[13.560s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication

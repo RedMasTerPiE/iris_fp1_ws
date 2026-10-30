@@ -1,0 +1,38 @@
+[0.195s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/rviz_satellite': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/rviz_satellite -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/rviz_satellite
+[2.013s] -- The C compiler identification is GNU 13.3.0
+[2.014s] -- The CXX compiler identification is GNU 13.3.0
+[2.014s] -- Detecting C compiler ABI info
+[2.015s] -- Detecting C compiler ABI info - done
+[2.015s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.016s] -- Detecting C compile features
+[2.016s] -- Detecting C compile features - done
+[2.016s] -- Detecting CXX compiler ABI info
+[2.020s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[2.020s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[2.020s]   CMake.
+[2.021s] 
+[2.021s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.021s]   CMake that the project does not need compatibility with older versions.
+[2.021s] 
+[2.021s] [0m
+[2.047s] -- Detecting CXX compiler ABI info - done
+[2.088s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.088s] -- Detecting CXX compile features
+[2.088s] -- Detecting CXX compile features - done
+[2.091s] -- Distribution: jazzy
+[2.097s] [31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake:28 (find_package):
+[2.097s]   Could not find a package configuration file provided by "Qt5QtCore" with
+[2.097s]   any of the following names:
+[2.098s] 
+[2.098s]     Qt5QtCoreConfig.cmake
+[2.098s]     qt5qtcore-config.cmake
+[2.098s] 
+[2.098s]   Add the installation prefix of "Qt5QtCore" to CMAKE_PREFIX_PATH or set
+[2.098s]   "Qt5QtCore_DIR" to a directory containing one of the above files.  If
+[2.099s]   "Qt5QtCore" provides a separate development package or SDK, be sure it has
+[2.099s]   been installed.
+[2.099s] Call Stack (most recent call first):
+[2.099s]   CMakeLists.txt:17 (find_package)
+[2.099s] 
+[2.099s] [0m
+[2.099s] -- Configuring incomplete, errors occurred!

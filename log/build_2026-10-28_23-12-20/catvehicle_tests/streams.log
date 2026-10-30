@@ -1,0 +1,39 @@
+[0.251s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/catvehicle_tests': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/simulation/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle_tests -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/install/catvehicle_tests
+[0.440s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.445s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.447s]   CMake.
+[0.447s] 
+[0.451s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.451s]   CMake that the project does not need compatibility with older versions.
+[0.452s] 
+[0.452s] [0m
+[0.599s] -- The C compiler identification is GNU 13.3.0
+[0.938s] -- The CXX compiler identification is GNU 13.3.0
+[0.999s] -- Detecting C compiler ABI info
+[1.399s] -- Detecting C compiler ABI info - done
+[1.497s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.498s] -- Detecting C compile features
+[1.503s] -- Detecting C compile features - done
+[1.544s] -- Detecting CXX compiler ABI info
+[2.012s] -- Detecting CXX compiler ABI info - done
+[2.173s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.173s] -- Detecting CXX compile features
+[2.174s] -- Detecting CXX compile features - done
+[2.209s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[2.209s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.210s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.211s] -- Configuring incomplete, errors occurred!
+[2.211s]   CMake did not find one.
+[2.212s] 
+[2.212s]   Could not find a package configuration file provided by "catkin" with any
+[2.212s]   of the following names:
+[2.212s] 
+[2.212s]     catkinConfig.cmake
+[2.213s]     catkin-config.cmake
+[2.213s] 
+[2.213s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.213s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.213s]   provides a separate development package or SDK, be sure it has been
+[2.213s]   installed.
+[2.214s] 
+[2.214s] [0m

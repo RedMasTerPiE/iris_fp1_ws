@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3c0a20b78f10af4b1dc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "communication",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_uninstall-18d7f7b35b7caedd5b59.json",
+					"name" : "communication_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udpReceiver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udpReceiver-aac8ea6adbc3c7829b2f.json",
+					"name" : "udpReceiver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udpSender::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udpSender-35b7a3370643fd3de920.json",
+					"name" : "udpSender",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4fcc563dd39f543a6e03.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication",
+		"source" : "/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
