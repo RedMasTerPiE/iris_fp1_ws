@@ -7,6 +7,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+# Use the system OpenCV, not the one installed in /usr/local:
+# - the /usr/local build (4.15.0-dev) has no GUI toolkit, so namedWindow() throws
+# - cv_bridge links the system OpenCV, so this avoids loading two cores at once
+set(OpenCV_DIR /usr/lib/x86_64-linux-gnu/cmake/opencv4)
 find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)

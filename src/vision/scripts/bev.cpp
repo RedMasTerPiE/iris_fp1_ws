@@ -60,8 +60,17 @@ private:
             Point2f(width, height), Point2f(0, height)
         };
 
-        Mat matrix = getPerspectiveTransform(src_pts, dst_pts);
+        Mat matrix;
         Mat bev_frame;
+        try {
+          matrix = getPerspectiveTransform(src_pts, dst_pts);
+        } catch (const cv::Exception &e) {
+          // Don't crash on a degenerate trapezoid (e.g. flipped trackbars)
+          RCLCPP_WARN_THROTTLE(
+              get_logger(), *get_clock(), 500,
+              "Skipping frame: invalid BEV quad (%s)", e.msg);
+          return;
+        }
         warpPerspective(frame, bev_frame, matrix, frame.size());
 
         imshow("Original", frame);
