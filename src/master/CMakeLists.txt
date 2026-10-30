@@ -11,6 +11,7 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+<<<<<<< HEAD
 add_executable(ackermannSteering scripts/ackermannSteering.cpp)
 
 install(TARGETS
@@ -18,6 +19,8 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+=======
+>>>>>>> 8113f073493ab82326ffe04b9bf90401085243c6
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

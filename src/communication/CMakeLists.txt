@@ -7,12 +7,16 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+<<<<<<< HEAD
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+=======
+>>>>>>> 8113f073493ab82326ffe04b9bf90401085243c6
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+<<<<<<< HEAD
 add_executable(udpReceiver scripts/udpReceiver.cpp)
 add_executable(udpSender scripts/udpSender.cpp)
 
@@ -25,6 +29,8 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+=======
+>>>>>>> 8113f073493ab82326ffe04b9bf90401085243c6
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
