@@ -1,8 +1,0 @@
-[0.038s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
-[0.104s] CMake Error at CMakeLists.txt:10:
-[0.105s]   Parse error.  Expected a command name, got unquoted argument with text
-[0.105s]   "<<<<<<<".
-[0.106s] 
-[0.106s] 
-[0.107s] -- Configuring incomplete, errors occurred!
-[0.109s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1

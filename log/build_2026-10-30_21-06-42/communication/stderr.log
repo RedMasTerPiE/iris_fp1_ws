@@ -1,8 +1,0 @@
-/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpReceiver.cpp: In function ‘int main(int, char**)’:
-/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/communication/scripts/udpReceiver.cpp:122:52: error: conversion from ‘std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >’ to non-scalar type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} requested
-  122 |     std::string args = rclcpp::remove_ros_arguments(argc, argv);
-      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-gmake[2]: *** [CMakeFiles/udpReceiver.dir/build.make:76: CMakeFiles/udpReceiver.dir/scripts/udpReceiver.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/udpReceiver.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2

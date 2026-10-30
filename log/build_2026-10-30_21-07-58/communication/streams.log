@@ -1,3 +1,0 @@
-[0.042s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/communication -- -j28 -l28
-[0.280s] [ 25%] Building CXX object CMakeFiles/udpReceiver.dir/scripts/udpReceiver.cpp.o
-[0.291s] [ 75%] Built target udpSender

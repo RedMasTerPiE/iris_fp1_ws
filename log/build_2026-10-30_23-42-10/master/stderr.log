@@ -1,8 +1,0 @@
-[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp:[m[K In member function ‘[01m[Kvoid AckermannSteering::[01;32m[Kupdate[m[K()[m[K’:
-[01m[K/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/src/master/scripts/ackermannSteering.cpp:82:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
-   82 |         double targetX = [01;31m[Kt[m[K.x - x0_;
-      |                          [01;31m[K^[m[K
-      |                          [32m[Ktm[m[K
-gmake[2]: *** [CMakeFiles/ackermannSteering.dir/build.make:76: CMakeFiles/ackermannSteering.dir/scripts/ackermannSteering.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ackermannSteering.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

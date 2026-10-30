@@ -1,4 +1,0 @@
-[ 50%] Built target udpReceiver
-[ 75%] [32mBuilding CXX object CMakeFiles/udpSender.dir/scripts/udpSender.cpp.o[0m
-[100%] [32m[1mLinking CXX executable udpSender[0m
-[100%] Built target udpSender

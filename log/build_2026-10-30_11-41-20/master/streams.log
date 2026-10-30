@@ -1,9 +1,0 @@
-[0.030s] Invoking command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
-[0.085s] CMake Error at CMakeLists.txt:14:
-[0.085s]   Parse error.  Expected a command name, got unquoted argument with text
-[0.085s]   "<<<<<<<".
-[0.085s] 
-[0.085s] 
-[0.086s] -- Configuring incomplete, errors occurred!
-[0.090s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
-[0.096s] Invoked command in '/home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/farrel/Documents/Scripts_1/fp_magang_IRIS(1)/iris_fp1_ws/build/master -- -j28 -l28
